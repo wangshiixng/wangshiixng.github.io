@@ -1,0 +1,89 @@
+body{
+
+ margin: 0;
+
+  background-color: #333333;
+  color: #fff;
+
+}
+.container{
+  margin-top: 10px;
+
+  text-align: center;
+
+}
+img{
+  width:100%;
+  margin-top: 10px;
+
+}
+.touxiang{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.content{
+background-color: #eeeeee;
+
+
+   width:100%;
+   margin: 5px auto;
+
+color: #333333;
+
+}
+.content p{
+  display: inline-block;
+
+  text-indent: 2em;
+
+  margin: 5px 5px;
+
+
+}
+.content1{
+  background-color: #eeeeee;
+  width: 100%;
+
+  margin: 5px auto;
+  color: #333333;
+
+}
+.content1 p{
+  display:inline-block;
+  text-indent: 2em;
+
+  margin: 5px 5px;
+
+
+}
+.skills{
+
+font-size: 30px;
+color: orange;
+
+}
+section{
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #eeeeee;
+  margin: 5px 5px;
+
+}
+nav{
+  text-align: center;
+
+}
+nav a{
+display: inline-block;
+background-color: #ce5d1b;
+height: 30px;
+line-height: 30px;
+width: 30%;
+font-size: 14px;
+
+
+
+}
