@@ -1,0 +1,67 @@
+html,body{
+height: 100%
+
+}
+body{
+  font-size: .2rem;
+  color:#333;
+}
+*{
+box-sizing: border-box;
+
+}
+
+
+input{
+border: 2px solid #000;
+height: 40px;
+width: 80%;
+margin-left: 10%;
+ text-align: center;
+}
+.list{
+
+ height: 100%;
+ width: 100%;
+}
+.list .item{
+display: -webkit-box;
+-webkit-box-align:center;
+padding: .3rem 0;
+  /*padding-top: 0.3rem;
+  padding-right: 0px;
+  padding-bottom: 0.3rem;
+  padding-left: 0px;*/
+  border: 1px solid #F2F2F2;
+
+}
+.list.img{
+ width: 2.54rem;
+ height: 1.45rem;
+ position: relative;
+
+}
+.list.info{
+-webkit-box-flex:1;
+width: 100%;
+margin-right: .2rem
+
+}
+.list .name{
+  font-size: .3rem;
+  color: #333;
+  margin-bottom: .1rem;
+
+}
+.list .brief{
+font-size: .26rem;
+line-height: .90rem;
+color: #969696;
+margin-bottom: .12rem;
+
+}
+.list .price{
+font-size: .28rem;
+color: #fe4900;
+
+}
