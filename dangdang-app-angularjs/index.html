@@ -8,19 +8,22 @@
     <title>当当网热搜榜</title>
     <link rel="stylesheet" href="assets/lib/weui/weui.css">
     <style>
-     html,body{
-       height: 100%;
-     }
-     *{
-       box-sizing: border-box;
-     }
-     </style>
-   </head>
-   <body>
-       <div ng-app='app'>
-           <div class="page__bd">
-               <div ng-view>
-               </div>
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app='app'>
+        <div class="page__bd">
+            <div ng-view>
+            </div>
             <!-- 底部导航 -->
             <div class="weui-tabbar" ng-controller='mainController'>
                 <a href="#/" ng-click='linkTo(0)' class="weui-tabbar__item {{selectedIndex==0?'weui-bar__item_on':''}}">
@@ -49,5 +52,7 @@
     <script src="assets/api/service.js"></script>
     <script src="assets/controllers/main_controller.js"></script>
     <script src="assets/controllers/book_controller.js"></script>
+    <script src="assets/controllers/book_list_controller.js"></script>
 </body>
+
 </html>

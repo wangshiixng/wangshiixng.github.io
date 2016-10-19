@@ -1,0 +1,9 @@
+<div class="weui-cells">
+  <a ng-repeat='item in bookTypes' class="weui-cell weui-cell_access" ng-href="#/book_list/{{item.id}}">
+      <div class="weui-cell__hd" ><img ng-src="{{item.img}}" style="width:20px;margin-right:5px;display:block"></div>
+      <div class="weui-cell__bd">
+          <p>{{item.name}}</p>
+      </div>
+      <div style="font-size:10px" class="weui-cell__ft">{{item.description}}</div>
+  </a>
+</div>
