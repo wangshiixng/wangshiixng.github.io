@@ -17,7 +17,7 @@ app.config(['$routeProvider',function($routeProvider){
   controller:'bookController'
 
 })
-.when({
+.when(/'about_me',{
       templateUrl:'./assets/tpl/about_me.html',
       controller:''
       })
@@ -25,5 +25,5 @@ app.config(['$routeProvider',function($routeProvider){
   otherwise({
   redirectTo:'/'
 
-  })
+})
 })]
