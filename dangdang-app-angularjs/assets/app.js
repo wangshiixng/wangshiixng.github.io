@@ -18,9 +18,9 @@ app.config(['$routeProvider',function($routeProvider){
 
 })
 .when({
-          templateUrl:'./assets/tpl/about_me.html',
-          controller:''
-        })
+      templateUrl:'./assets/tpl/about_me.html',
+      controller:''
+      })
 
   otherwise({
   redirectTo:'/'
