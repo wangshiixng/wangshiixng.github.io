@@ -14,7 +14,7 @@ app.config(['$routeProvider',function($routeProvider){
 })
 .when('/book',{
   templateUrl:'./assets/tpl/book.html',
-  controller:'bookController'
+  controller:''
 
 })
 .when('/about_me',{
@@ -24,8 +24,6 @@ app.config(['$routeProvider',function($routeProvider){
 .when('/book_list',{
    templateUrl:'./assets/tpl/book_list.html',
    controller:'bookListController'
-
-
 })
   .otherwise({
   redirectTo:'/'
