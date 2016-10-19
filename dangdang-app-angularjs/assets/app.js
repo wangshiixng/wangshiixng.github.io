@@ -27,9 +27,7 @@ app.config(['$routeProvider',function($routeProvider){
 
 
 })
-
-  otherwise({
+  .otherwise({
   redirectTo:'/'
-
 })
 }])
