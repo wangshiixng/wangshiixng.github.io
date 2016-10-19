@@ -21,4 +21,5 @@ service.getData=function(type,callBack){
     console.dir(err);
  })
 }
+return service;
 }])

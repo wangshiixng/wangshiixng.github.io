@@ -3,6 +3,6 @@ app.controller('mainController',['$scope','commonService',function{($scope, c_se
  c_service.getData('ertong',function(res){
 
     console.dir(res);
- })
+ });
 
-}])
+}]);
