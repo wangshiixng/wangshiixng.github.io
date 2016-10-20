@@ -17,11 +17,11 @@ app.config(['$routeProvider',function($routeProvider){
   controller:'bookController'
 
 })
-.when('/about_me',{
-      templateUrl:'./assets/tpl/about_me.html',
+.when('/about-me',{
+      templateUrl:'./assets/tpl/about-me.html',
       controller:''
       })
-.when('/book_list',{
+.when('/book_list':'id',{
    templateUrl:'./assets/tpl/book_list.html',
    controller:'bookListController'
 })
