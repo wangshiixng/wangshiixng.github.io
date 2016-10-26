@@ -1,0 +1,315 @@
+html,body{
+	font-family: 'Microsoft YaHei',sans-serif;
+    margin:0px;
+    height:100%;
+    background: url(../img/bg_section.jpg) repeat;
+		background-repeat: no-repeat;
+		background-size: cover;
+   /* overflow: hidden;*/
+}
+.hide{
+	display: none;
+}
+.navbar-default {
+    background-color: #fff;
+    border:none;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+.navbar-default .navbar-brand{
+	font-size:30px;
+	font-weight: bold;
+	color:#40d2b1;
+	height: 70px;
+	line-height: 35px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #40D2B1;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #40D2B1;
+    background: #95E6D9;
+}
+.navbar-toggle{
+	margin-top: 15px;
+}
+.section{
+
+	padding:80px;
+	font-size: 32px;
+	font-weight: 400;
+	text-align: center;
+
+	background-size: cover;
+	height: 100%;
+
+}
+/*logo*/
+.navbar-header #logo{
+	height: 80px;
+	/*vertical-align: top;*/
+}
+ .navbar-header #logo #logoInfo{
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	overflow: hidden;
+
+ }
+  .navbar-header #logo img:hover{
+  	box-shadow: 0 0 20px gray;
+  }
+ .navbar-header #logo #logoInfo ul{
+ 	padding: 0;
+ }
+ .navbar-header #logo #logoInfo ul li{
+ 	list-style-type: none;
+ 	text-align: center;
+ }
+/*home*/
+section#home{
+	/*background:url(../img/home-bg.jpg) repeat;*/
+	height: 100%;
+	background-size: cover;
+	color: #333;
+	margin-top: 70px;
+	text-align: center;
+}
+/*.lvjing{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.4);
+	background-size: cover;
+	padding:90px 0;
+}*/
+#home_header{
+
+	width: 200px;
+	height: 200px;
+	margin:0 auto;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-top: 30px;
+
+}
+#home_header:hover{
+	box-shadow: 0px 0px 44px gray;
+}
+#home_header img{
+    /*width: 250px;*/
+    height: 215px;
+}
+#home_info{
+	margin-top: 50px;
+	font-size: 18px;
+	font-weight: 400;
+
+
+}
+#home_info1{
+	margin-top: 50px;
+	border-top:2px solid #fff;
+
+}
+#home_info1 p{
+	margin-top: 25px;
+}
+
+
+/*home*/
+/*aboutme*/
+
+.title {
+	text-align:center;
+	/*width:165px;*/
+	border-bottom:2px solid red;
+	margin-top: 95px;
+}
+.title1{
+	margin-top: 20px;
+	text-align:center;
+	color: red;
+	font-size: 16px;
+}
+
+section#aboutMe .about_list{
+	background: #B7D7B3;
+	border-radius: 30px;
+	padding:20px;
+}
+section#aboutMe  .aboutinfo{
+	display: inline-block;
+	/*margin-top: 20px;*/
+	margin:0 auto;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+}
+section#aboutMe  .aboutinfo img{
+	margin: 0 auto;
+}
+section#aboutMe  .imginfo{
+	width: 90px;
+	height: 90px;
+	border:2px solid #fff;
+	border-radius: 50%;
+	margin:0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+section#aboutMe  .imginfo:hover{
+	border:4px solid #98DE8B;
+	background:white;
+}
+section#aboutMe  .imginfo img{
+	position: absolute;
+	z-index: 0;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+section#aboutMe h4{
+	margin-top: 40px;
+	text-align: center;
+}
+section#aboutMe .about_introduce{
+    border-left: 2px solid #5686D6;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 50px;
+	font-size: 16px;
+
+}
+section#aboutMe .about_introduce p:hover{
+	font-size:18px;
+	box-shadow:  10px 10px 5px #888888;
+}
+/*aboutme*/
+
+/*skill*/
+section#skill .skill_icon img{
+	height: 200px;
+	width: 170px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+section#skill .skill_icon img:hover{
+	height: "226px";
+	 width: "203px";
+}
+section#skill .skill_list{
+	margin-top: 50px;
+}
+section#skill .skill_name{
+	margin-top: 30px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+section#skill  .skill_flag{
+	background: url(../img/skill_flag.png);
+	width: 20px;
+	height: 20px;
+	margin:0 auto;
+}
+section#skill .skill_int{
+    padding: 30px 30px;
+	margin-top: 30px;
+	font-size: 14px;
+	text-align: left;
+	background: #B7D7B3;
+	border-radius: 10px;
+}
+
+/*skill*/
+/*exp*/
+section#exp .exp_content{
+	position: relative;
+	margin-top: 80px;
+
+}
+section#exp .exp_list{
+	font-size: 16px;
+	position: absolute;
+	left: 70px;
+    top: 20px;
+
+}
+/*exp*/
+/*demo_content*/
+  section#demo_content .demo_details{
+  	 position: relative;
+  	 height: 100%;
+  	 width: 200px;
+  	 cursor: pointer;
+
+  }
+   section#demo_content .demo_details .box_hover{
+           height: 100%;
+           width: 100%;
+           position: absolute;
+           background: rgba(238, 124, 123, 0.6);
+
+   }
+   section#demo_content .box_hover p{
+     margin-top: 10px;
+   	font-size: 15px;
+   }
+   section#demo_content .demo_details .box_hover  .demo_hover_icon{
+   	   position: absolute;
+   	   top: 30%;
+       left: 36%;
+   }
+
+/*demo_content*/
+/*侧边栏*/
+  aside {
+  	z-index: 1000;
+  	 position:fixed;
+    left:0;
+    top: 70%;
+
+  }
+   aside ul{
+   	width: 10px;
+   	display: inline-block;
+   	vertical-align:top;
+   	list-style-type: none;
+   }
+   aside ul li{
+   	cursor: pointer;
+   	width: 24px;
+  /*  background: yellow;*/
+    text-align: center;
+    margin-top: 2px;
+    padding:2px;
+    position: relative;transition:All 1s ease;
+     -webkit-transition:All 1s ease;
+     -moz-transition:All 1s ease;
+     -o-transition:All 1s ease;
+		 top:-400px;
+   }
+
+    aside ul li:hover{
+   	-webkit-transform: rotate(360deg);
+   	-moz-transform: rotate(360deg);
+   	-o-transform: rotate(360deg);
+   	transform: rotate(360deg)
+   }
+  aside ul li:hover b{
+  	display: block;
+  }
+   aside ul li b{
+   	display: none;
+   position: absolute;
+   width: 80px;
+   top: 0px;
+   left:15px;
+   color: black;
+   }
+
+   /*侧边栏*/

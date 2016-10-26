@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>当当网热搜榜</title>
+    <link rel="stylesheet" href="assets/lib/weui/weui.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-app='app'>
+        <div class="page__bd">
+            <div ng-view>
+            </div>
+            <!-- 底部导航 -->
+            <div class="weui-tabbar" ng-controller='mainController'>
+                <a href="#/" ng-click='linkTo(0)' class="weui-tabbar__item {{selectedIndex==0?'weui-bar__item_on':''}}">
+                    <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="#/blog" ng-click='linkTo(1)' class="weui-tabbar__item {{selectedIndex==1?'weui-bar__item_on':''}}">
+                    <img src="./assets/images/icon_nav_search.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">工作经历</p>
+                </a>
+                <a href="#/book" ng-click='linkTo(2)' class="weui-tabbar__item {{selectedIndex==2?'weui-bar__item_on':''}}">
+                    <img src="./assets/images/icon_nav_tab.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">当当热销</p>
+                </a>
+                <a href="#/about_me" ng-click='linkTo(3)' class="weui-tabbar__item {{selectedIndex==3?'weui-bar__item_on':''}}">
+                    <img src="./assets/images/icon_nav_dialog.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">联系我</p>
+                </a>
+            </div>
+            <!-- 底部导航end -->
+        </div>
+    </div>
+    <script src="assets/lib/angular.min.js"></script>
+    <script src="assets/lib/angular-route.min.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/api/service.js"></script>
+    <script src="assets/controllers/main_controller.js"></script>
+    <script src="assets/controllers/book_controller.js"></script>
+    <script src="assets/controllers/book_list_controller.js"></script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260658731'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260658731' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+
+</html>
