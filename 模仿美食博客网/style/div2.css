@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #CA5518;
+}
+a:hover {
+	text-decoration:none;
+	color: #ff0000;
+}
+img {
+	border:0;
+}
+body {
+	font:12px Verdana;
+	background: #F7F6F6 url(../images/background.gif) repeat-x 0 0;
+}
+#wrapper {
+	width:970px;
+	margin:0 auto;
+}
+/*设置header区域规则*/
+#header {
+	height:180px;
+}
+#header .logo {
+	float:left;
+	padding:30px 0 20px;
+}/*设置上内边距30像素，左右内边距0像素，下内边距20像素*/
+#header .logo h1 {
+	font-size:2.8em;
+	text-transform:uppercase;/*将字母转换为大写*/
+}
+#header .logo h1 a {
+	text-decoration:none;/*设置超链接无下划线*/
+}
+#header .logo p {
+	color:#777777;
+	font-size:1.4em;
+	text-transform:uppercase;
+}
+#header .pages {
+	list-style-type:none;/*清除无序列表默认风格*/
+	clear:both;/*清除浮动*/
+	height:35px;
+	overflow:hidden;/*溢出内容设置为隐藏*/
+}
+#header .pages li {
+	float:left;/*设置列表项左浮动*/
+	padding-right:2px;/*设置右内边距的距离，目的是为了留出背景图像*/
+	background:url(../images/divider.gif) no-repeat right 0;/*设置列表项的背景图像，无重复，x轴右对齐，y轴顶对齐*/
+}
+#header .pages li a {
+	display:block;/*块状化a元素，使其具有宽度和高度属性*/
+	height:26px;
+	width:60px;
+	color: #777777;
+	text-decoration:none;
+	text-align:center;
+	font-size:1.3em;
+	padding: 11px 14px 0px 11px;/*分别设置上、右、下、左内边距*/
+	font-family:"黑体";
+}
+#header .pages li a:hover {
+	color: #CA5518;/*设置鼠标悬停时的颜色*/
+}
+#header .categories {
+	list-style-type:none;/*清除无序列表默认风格*/
+	clear:both;
+	height:34px;
+	overflow:hidden;
+}
+#header .categories li {
+	float:left;
+}
+#header .categories li a {
+	color:#ffffff;
+	text-decoration:none;
+	display:block;
+	height:25px;
+	width:85px;
+	padding:12px 14px 0px 14px;
+}
+#header .categories li a:hover {
+	text-decoration:underline;/*设置鼠标悬停时有下划线效果*/
+}
+
+
+
+/*content区域规则*/
+#content {
+	width:630px;
+	float:left;/*设置content浮动，目的在于为后边的sidebar做准备*/
+	padding:15px 0 10px;
+}
+#featured {
+	height: 238px;
+	background: #ffffff url(../images/featured.gif) repeat-x 0 0;
+	padding: 12px;
+	border: 1px solid #bbbbbb;
+	margin-bottom: 10px;
+}
+
+
+
+#featured h2 {
+	font-size: 1.5em;
+	margin-bottom: 40px;
+}/*定义头条新闻样式*/
+#featured .fpost {
+	height: 180px;
+}
+#featured img {
+	float:left;/*设置照片浮动，使得文字能够环绕*/
+	margin: 0 10px 10px 0;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}/*定义照片样式*/
+#featured h3 {
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+#featured h3 a {
+	color: #000000;
+	text-decoration: none;
+}
+#featured .details {
+	font-size: 0.9em;
+	margin-bottom: 15px;
+}/*定义文章信息样式*/
+#featured p {
+	line-height: 1.5em;
+}
+
+
+
+
+
+.post {
+	width: 288px;
+	float: left;
+	padding: 10px 10px 15px;
+	border: 1px solid #bbbbbb;
+	background: #F0F0F0 url(../images/post.gif) repeat-x 0 bottom;/*设置背景图像水平方向平铺，且左下角对齐*/
+	margin-bottom: 10px;
+	margin-left:2px;
+	margin-top:12px;
+}
+.post h3 {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+.post h3 a {
+	color: #000000;
+	text-decoration: none;
+}
+.post img {
+	width: 90px;
+	height: 90px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+	float: left;/*设置图像浮动，使得文字能够环绕*/
+	margin: 0 10px 15px 0;/*设置图像和文字之间的距离*/
+}
+.post p {
+	line-height: 1.5em;/*设置行距为1.5倍*/
+}
+.post .category {
+	clear: both;/*清除之前图像应用的浮动效果*/
+	font-weight: bold;
+	float: left;
+	padding-top: 10px;
+}
+.post .comments {
+	font-weight: bold;
+	float: right;
+	padding-top: 10px;
+}
+
+/*sidebar区域规则*/
+#sidebar {
+	width: 330px;
+	float: right;
+	padding: 15px 0 10px;
+}
+.box {
+	border: 1px solid #bbbbbb;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+.box h2 {
+	background:  url(../images/sidehead.gif) repeat-x 0 0;
+	padding: 12px 10px;
+	font-size:1.2em;
+	text-transform: uppercase;
+}
+.box .sponsors {
+	text-align: center;
+	padding: 7px;
+}
+.box .sponsors img {
+	margin:7px;
+}
+
+.popular {
+	list-style-type: none;
+	padding: 14px;
+}
+.popular li {
+	line-height: 1.4em;
+	padding: 4px 0;
+}
+.popular li a {
+	font-weight: bold;
+	color: #CA5518;
+	text-decoration:underline;
+}
+.popular li p {
+	padding: 4px 0;
+}
+
+.flickr {
+	text-align: center;
+	padding: 7px;
+}
+.flickr img {
+	margin: 7px;
+}
+
+/*footer区域规则*/
+
+#footer {
+	clear: both;
+	background-color: #6A6A6A;
+	padding: 20px 0;
+	height: 15px;
+	font-size: 0.9em;
+}
+.footerwrapper {
+	width: 970px;
+	margin: auto auto;
+	text-align: left;
+}
+#footer p {
+	color: #ffffff;
+}
+#footer a {
+	color: #ffffff;
+}
+#footer p.left {
+	float: left;
+}
+#footer p.right {
+	float: right;
+}
+
